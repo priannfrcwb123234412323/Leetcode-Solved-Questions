@@ -14,6 +14,7 @@ class Solution
     
     int maxMeetings(int start[], int end[], int n)
     {
+        int a;
         int meetings=1;
         vector<pair<int,int>>v;
         for(int i=0;i<n;i++){
