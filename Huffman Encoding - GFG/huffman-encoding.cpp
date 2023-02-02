@@ -39,6 +39,7 @@ class Solution
 	public:
 		vector<string> huffmanCodes(string S,vector<int> f,int N)
 		{
+		    int n = S.size();
 		    priority_queue<node* , vector<node*>,comp>pq;
 		    for(int i=0;i<N;i++){
 		        node* temp = new node(f[i]);
@@ -60,6 +61,7 @@ class Solution
 		    vector<string>ans;
 		    string temp="";
 		    traverse(root,ans,temp);
+			
 		    return ans;
 		}
 };
