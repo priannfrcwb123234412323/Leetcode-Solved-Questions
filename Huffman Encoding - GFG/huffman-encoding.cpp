@@ -40,6 +40,7 @@ class Solution
 		vector<string> huffmanCodes(string S,vector<int> f,int N)
 		{
 		    int n = S.size();
+	            // changes made		
 		    priority_queue<node* , vector<node*>,comp>pq;
 		    for(int i=0;i<N;i++){
 		        node* temp = new node(f[i]);
